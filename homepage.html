@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      prefix: 'tw-',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#a855f7',
+            secondary: '#0ea5e9',
+            darkbg: '#0f172a',
+            cardbg: '#1e293b',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="homepage.css" rel="stylesheet">
+</head>
+
+<body class="tw-bg-darkbg tw-text-white tw-font-sans">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-effect tw-py-4">
+    <div class="container">
+      <a href="homepage.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+        style="gap:10px;padding-left: 0px; cursor: pointer;">
+        <h1>☺️</h1>
+        <div class="headline">
+          <h1 class="typing-loop-nav navbar-text-anim" data-text="Welcome, to My Portfolio..."></h1>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav tw-gap-6 tw-items-center">
+          <li class="nav-item"><a class="nav-link text-white hover-underline" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white hover-underline" href="#Qualification">Qualification</a>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white hover-underline" href="#Experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link text-white hover-underline" href="#Projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white hover-underline" href="#Skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white hover-underline" href="#Blog">Blogs</a></li>
+          <li class="nav-item">
+            <a href="#Connect" class="btn btn-outline-light tw-rounded-full tw-px-8 tw-py-2 btn-glow">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="About" class="tw-min-h-screen tw-flex tw-items-center tw-justify-center tw-pt-32 tw-pb-20 hpbg">
+    <div class="container tw-mt-10">
+      <div class="row align-items-center flex-column-reverse flex-lg-row gy-5">
+        <div class="col-lg-7 tw-text-center lg:tw-text-left fade-in-left">
+          <h4 class="tw-text-primary tw-font-semibold tw-mb-4 tw-text-2xl slide-up">👋 Hello, I'm</h4>
+          <h1 class="tw-text-5xl lg:tw-text-7xl tw-font-bold tw-mb-6 text-gradient typing-loop-hero"
+            data-text="Venkata Shiva Sri">
+          </h1>
+          <h3 class="tw-text-3xl tw-text-gray-300 tw-mb-8 slide-up delay-100">
+            Full Stack Developer & <span class="tw-text-secondary">AI Specialist</span>
+          </h3>
+          <div class="tw-flex tw-flex-wrap tw-gap-4 tw-justify-center lg:tw-justify-start tw-mb-10 slide-up delay-200">
+            <span class="skill-pill">FullStack WebDevelopment</span>
+            <span class="skill-pill">AI & ML Enthusiast</span>
+            <span class="skill-pill">Insight Seeker</span>
+          </div>
+          <div class="tw-flex tw-gap-6 tw-justify-center lg:tw-justify-start slide-up delay-300">
+            <a href="https://drive.google.com/file/d/1qN-5WamqIpQMK6phdQNVJAmwES53s8PN/view?usp=drive_link"
+              target="_blank"
+              class="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-text-white tw-px-10 tw-py-4 tw-rounded-full tw-font-bold tw-text-lg hover:tw-shadow-lg hover:tw-scale-105 tw-transition-all btn-pulse">
+              📄 My Resume
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 tw-flex tw-justify-center fade-in-right">
+          <div class="profile-glow floating-anim">
+            <img src="assets/profilepic.jpeg" alt="Profile Picture"
+              class="tw-w-80 tw-h-80 tw-object-cover tw-rounded-full tw-border-4 tw-border-primary/50 tw-shadow-2xl">
+          </div>
+        </div>
+      </div>
+
+      <div class="row tw-mt-32 reveal-on-scroll">
+        <div class="col-12">
+          <div
+            class="tw-bg-cardbg/60 tw-backdrop-blur-xl tw-p-10 tw-rounded-3xl tw-border tw-border-gray-700 tw-shadow-2xl glass-card">
+            <div class="heading-container text-center">
+              <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">About Me</h2>
+            </div>
+            <p class="tw-text-gray-300 tw-leading-loose tw-text-lg tw-text-justify tw-mt-8">
+              As a dedicated B.Tech student and AI & ML enthusiast, I have consistently sharpened my skills in coding
+              and software
+              development through rigorous practice and real-time projects. I am eager to apply my skills in innovative
+              and
+              creative software development, particularly in the domains of AI & ML. My passion for AI & ML has driven
+              me
+              to build impactful projects during my internships with NxtWave and Google for Developers, and I have also
+              developed a range of projects showcased on my GitHub profile. In addition, I gained valuable industry
+              exposure
+              through a Full-Time Internship at Robokalam as an Intern - Full Stack Web Development (FSWD), where I
+              worked
+              on designing, developing, and deploying scalable web applications, strengthening my end-to-end development
+              skills in a professional environment. Some of my key projects include successfully developing a chatbot
+              application for SR University, implementing style transfer for art using Generative AI, and creating
+              a web clone of the NxtWave Talks website. Alongside my AI & ML expertise, I am also a skilled Full
+              Stack Web Developer, experienced in building responsive and dynamic websites from scratch using
+              modern technologies such as HTML, CSS, JavaScript, React, Node.js, and MongoDB. I have successfully
+              designed and deployed multiple web applications, ensuring robust functionality, performance, and an
+              engaging user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Qualification" class="tw-py-32 reveal-on-scroll">
+    <div class="container">
+      <div class="heading-container text-center tw-mb-16">
+        <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">Qualification</h2>
+      </div>
+      <div
+        class="tw-bg-cardbg tw-p-10 tw-rounded-3xl tw-border tw-border-gray-700 tw-max-w-5xl tw-mx-auto hover:tw-border-primary tw-transition-all tw-shadow-xl hover:tw-shadow-primary/20 tilt-hover">
+        <h3 class="tw-text-3xl tw-font-bold tw-text-primary tw-mb-6">SR University - (2022-2026)</h3>
+        <ul class="tw-space-y-3 tw-text-gray-300 tw-text-lg tw-list-none">
+          <li class="tw-flex tw-items-center tw-gap-3"><i class="bi bi-mortarboard-fill tw-text-secondary"></i> Bachelor
+            of Technology in Computer Science (AI & ML)</li>
+          <li class="tw-flex tw-items-center tw-gap-3"><i class="bi bi-trophy-fill tw-text-secondary"></i> CGPA :
+            9.16/10</li>
+        </ul>
+        <div class="tw-mt-8 tw-p-6 tw-bg-darkbg/50 tw-rounded-xl">
+          <h6 class="tw-font-bold tw-text-secondary tw-text-xl tw-mb-4">Core Competencies</h6>
+          <ul class="tw-grid md:tw-grid-cols-2 tw-gap-3 tw-text-gray-400 tw-list-none">
+            <li><i class="bi bi-check-circle-fill tw-text-primary tw-mr-2"></i> HTML, CSS, JavaScript, BootStrap</li>
+            <li><i class="bi bi-check-circle-fill tw-text-primary tw-mr-2"></i> ReactJs</li>
+            <li><i class="bi bi-check-circle-fill tw-text-primary tw-mr-2"></i> C Language, Python, Java</li>
+            <li><i class="bi bi-check-circle-fill tw-text-primary tw-mr-2"></i> SQL, MongoDB</li>
+            <li><i class="bi bi-check-circle-fill tw-text-primary tw-mr-2"></i> Data Structures and Algorithms</li>
+            <li><i class="bi bi-check-circle-fill tw-text-primary tw-mr-2"></i> Generative AI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Experience" class="tw-py-32 tw-bg-cardbg/20 reveal-on-scroll">
+    <div class="container">
+      <div class="heading-container text-center tw-mb-20">
+        <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">Experience</h2>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-lg-10">
+
+          <div class="tw-border-l-4 tw-border-secondary tw-pl-10 tw-pb-4 tw-relative fade-up-item">
+            <div
+              class="tw-absolute -tw-left-3 tw-top-0 tw-w-6 tw-h-6 tw-bg-secondary tw-rounded-full tw-shadow-[0_0_15px_rgba(14,165,233,0.8)] pulse-dot">
+            </div>
+            <div
+              class="tw-bg-cardbg tw-p-8 tw-rounded-2xl tw-border tw-border-gray-800 hover:tw-border-secondary/50 tw-transition-all hover:tw-translate-x-2">
+              <h3 class="tw-text-2xl tw-font-bold tw-text-white">Robokalam Technologies | June 2025 - Jan 2026</h3>
+              <div class="tw-text-secondary tw-font-semibold tw-mb-4 tw-mt-1">Robokalam Technologies | June 2025 - Jan
+                2026</div>
+              <ul class="tw-space-y-2 tw-text-gray-400 tw-list-disc tw-pl-5">
+                <li>Worked as a Full Stack Web Development Intern, contributing to the design, development, and
+                  deployment of real-world web applications in a professional environment.</li>
+                <li>Built responsive and dynamic user interfaces using modern frontend technologies, ensuring
+                  performance, usability, and cross-device compatibility.</li>
+                <li>Collaborated with the development team to implement backend logic, integrate databases(phpMyAdmin),
+                  and enhance application functionality from end to end.</li>
+                <li>Gained hands-on industry experience across the complete software development lifecycle, from
+                  requirement analysis to testing and deployment(In Hostinger).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tw-border-l-4 tw-border-primary tw-pl-10 tw-pb-16 tw-relative fade-up-item">
+            <div
+              class="tw-absolute -tw-left-3 tw-top-0 tw-w-6 tw-h-6 tw-bg-primary tw-rounded-full tw-shadow-[0_0_15px_rgba(168,85,247,0.8)] pulse-dot">
+            </div>
+            <div
+              class="tw-bg-cardbg tw-p-8 tw-rounded-2xl tw-border tw-border-gray-800 hover:tw-border-primary/50 tw-transition-all hover:tw-translate-x-2">
+              <h3 class="tw-text-2xl tw-font-bold tw-text-white">Web Clone Internship</h3>
+              <div class="tw-text-primary tw-font-semibold tw-mb-4 tw-mt-1">Nxt Wave | Dec 2024 - Jan 2025</div>
+              <ul class="tw-space-y-2 tw-text-gray-400 tw-list-disc tw-pl-5">
+                <li>Developed a responsive web clone of the NxtWave Talks website, replicating its design and
+                  functionality with a structured layout.</li>
+                <li>Optimized responsiveness and user experience using modern web development best practices.</li>
+                <li>Gained practical experience in all aspects of software development, from design to deployment.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tw-border-l-4 tw-border-secondary tw-pl-10 tw-pb-4 tw-relative fade-up-item">
+            <div
+              class="tw-absolute -tw-left-3 tw-top-0 tw-w-6 tw-h-6 tw-bg-secondary tw-rounded-full tw-shadow-[0_0_15px_rgba(14,165,233,0.8)] pulse-dot">
+            </div>
+            <div
+              class="tw-bg-cardbg tw-p-8 tw-rounded-2xl tw-border tw-border-gray-800 hover:tw-border-secondary/50 tw-transition-all hover:tw-translate-x-2">
+              <h3 class="tw-text-2xl tw-font-bold tw-text-white">AI-ML Virtual Internship</h3>
+              <div class="tw-text-secondary tw-font-semibold tw-mb-4 tw-mt-1">Google For Developers | July 2024 - Sep
+                2024</div>
+              <ul class="tw-space-y-2 tw-text-gray-400 tw-list-disc tw-pl-5">
+                <li>Developed Proficiency in AI-ML Fundamentals: Gained hands-on experience with key AI and ML concepts.
+                </li>
+                <li>Implemented Real-World AI Solutions: Built and deployed machine learning models addressing practical
+                  challenges.</li>
+                <li>Enhanced Technical Collaboration: Collaborated within the Google for Developers community receiving
+                  mentorship.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Projects" class="tw-py-32 reveal-on-scroll">
+    <div class="container">
+      <div class="heading-container text-center tw-mb-20">
+        <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">My Projects</h2>
+      </div>
+      <div id="projectCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/generated_img.jpg"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg"
+                    alt="Style Transfer">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-primary tw-mb-4">🎨 Style Transfer for Art</h3>
+                  <p class="tw-text-gray-400 tw-mb-6 tw-leading-relaxed">Developed an AI-powered style transfer model
+                    using TensorFlow Hub and VGG19 to apply artistic styles to images. Utilized deep learning techniques
+                    to generate artistic transformations with optimized performance.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">Python</span>
+                    <span class="badge-custom">TensorFlow</span>
+                    <span class="badge-custom">Keras</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Generative-AI-Project" target="_blank"
+                      class="btn btn-outline-info tw-rounded-full tw-px-6">View Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/srubot.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg" alt="Chatbot">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-secondary">🤖 Chat Bot Development</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">Created a chatbot for SR University that
+                    answers real-time questions from incoming B.Tech students. Applied NLP to deliver accurate,
+                    context-aware responses.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">Python</span>
+                    <span class="badge-custom">NLP</span>
+                    <span class="badge-custom">Streamlit</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/AIML_Project" target="_blank"
+                      class="btn btn-outline-info tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://mrinnovaterchatbotforsru.streamlit.app/" target="_blank"
+                      class="btn btn-primary tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/web clone ss.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg" alt="Web Clone">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-warning">🌐 Nxt Wave Talks - Web Clone</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">Crafted a pixel-perfect and fully responsive
+                    clone of the NxtWave Talks website, mirroring its UI and functionality using modern HTML, CSS, and
+                    Bootstrap practices.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">HTML</span>
+                    <span class="badge-custom">CSS</span>
+                    <span class="badge-custom">Bootstrap</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Web-Clone-Project" target="_blank"
+                      class="btn btn-outline-warning tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://mrinnovater.github.io/Web-Clone-Project/code.html" target="_blank"
+                      class="btn btn-outline-light tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/transportation.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg"
+                    alt="Transportation">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-info">🚍 Transportation Planner</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">Built a full-featured transportation system in
+                    C that supports various travel modes with fare calculation. Designed for ease of use via CLI.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">C Language</span>
+                    <span class="badge-custom">Algorithms</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Transportation-" target="_blank"
+                      class="btn btn-outline-info tw-rounded-full tw-px-6">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/guessgame.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg" alt="Guess Game">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-warning">🎯 Guess the Number</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">A fun and interactive number guessing game
+                    built in Python. The system randomly selects a number between 1 and 30.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">Python</span>
+                    <span class="badge-custom">Logic</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Guess_game" target="_blank"
+                      class="btn btn-outline-warning tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://guess-gamess.onrender.com/" target="_blank"
+                      class="btn btn-outline-light tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/learningwebsite.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg"
+                    alt="Learning Website">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-primary">📘 Learning Website</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">Designed an inclusive educational platform for
+                    students across multiple academic stages. The site helps clarify doubts in a safe space.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">HTML</span>
+                    <span class="badge-custom">CSS</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Learning-website" target="_blank"
+                      class="btn btn-outline-primary tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://mrinnovater.github.io/Learning-website/homepage.html" target="_blank"
+                      class="btn btn-outline-light tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/faltbooking.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg" alt="Flat Booking">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-danger">🏢 Flat Booking Platform</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">Developed a dynamic flat booking website that
+                    enables users to browse and select from a range of housing options.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">HTML</span>
+                    <span class="badge-custom">CSS</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Flat-booking" target="_blank"
+                      class="btn btn-outline-danger tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://mrinnovater.github.io/Flat-booking/flatbooking.html" target="_blank"
+                      class="btn btn-outline-light tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/tempconv.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg"
+                    alt="Temp Converter">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-primary">🌡️ Temperature Converter</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">A responsive and interactive web application
+                    for converting values between Celsius, Fahrenheit, and Kelvin.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">JavaScript</span>
+                    <span class="badge-custom">CSS</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Temperature_Converter" target="_blank"
+                      class="btn btn-outline-primary tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://temperature-converter-d0yz.onrender.com/" target="_blank"
+                      class="btn btn-outline-light tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="tw-bg-cardbg tw-rounded-3xl tw-p-10 tw-border tw-border-gray-700 tw-shadow-2xl tw-mx-auto tw-max-w-6xl glass-card">
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                  <img src="assets/reuters.png"
+                    class="img-fluid tw-rounded-2xl tw-w-full tw-object-cover tw-h-80 tw-shadow-lg"
+                    alt="Reuters Explorer">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="tw-text-3xl tw-font-bold tw-text-primary">🧠 Reuters Word Explorer</h3>
+                  <p class="tw-text-gray-400 tw-my-6 tw-leading-relaxed">An interactive NLP tool that explores semantic
+                    relationships using the Reuters dataset. Built with Word2Vec and Streamlit.</p>
+                  <div class="tw-flex tw-gap-3 tw-mb-8 tw-flex-wrap">
+                    <span class="badge-custom">Python</span>
+                    <span class="badge-custom">Streamlit</span>
+                  </div>
+                  <div class="tw-flex tw-gap-4">
+                    <a href="https://github.com/Mrinnovater/Reuters_word_explorer" target="_blank"
+                      class="btn btn-outline-primary tw-rounded-full tw-px-6">Code</a>
+                    <a href="https://mrinnovaterreuterswordexplorer.streamlit.app/" target="_blank"
+                      class="btn btn-outline-light tw-rounded-full tw-px-6">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-4" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-4" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="Skills" class="tw-py-32 tw-bg-cardbg/20 reveal-on-scroll">
+    <div class="container">
+      <div class="heading-container text-center tw-mb-24">
+        <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">Skills Obtained</h2>
+      </div>
+
+      <div class="tw-mb-16">
+        <h3 class="tw-text-2xl tw-font-bold tw-text-secondary tw-border-l-4 tw-border-primary tw-pl-4 tw-mb-8">
+          Programming Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <img src="assets/c.png" alt="C">
+            <p>C</p>
+          </div>
+          <div class="skill-box"><img src="assets/python.png" alt="Python">
+            <p>Python</p>
+          </div>
+          <div class="skill-box"><img src="assets/java.jpeg" alt="Java">
+            <p>Java</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-mb-16">
+        <h3 class="tw-text-2xl tw-font-bold tw-text-secondary tw-border-l-4 tw-border-primary tw-pl-4 tw-mb-8">Web
+          Technologies</h3>
+        <div class="skills-grid">
+          <div class="skill-box"><img src="assets/web.png" alt="HTML CSS">
+            <p>HTML/CSS</p>
+          </div>
+          <div class="skill-box"><img src="assets/bootstrap.png" alt="Bootstrap">
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-box"><img src="assets/reactjs.png" alt="React">
+            <p>ReactJS</p>
+          </div>
+          <div class="skill-box"><img src="assets/phpmyadmin.png" alt="phpMyAdmin">
+            <p>phpMyAdmin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-mb-16">
+        <h3 class="tw-text-2xl tw-font-bold tw-text-secondary tw-border-l-4 tw-border-primary tw-pl-4 tw-mb-8">
+          Frameworks & Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-box"><img src="assets/git.png" alt="Git">
+            <p>Git</p>
+          </div>
+          <div class="skill-box"><img src="assets/vs.png" alt="VS Code">
+            <p>VS Code</p>
+          </div>
+          <div class="skill-box"><img src="assets/postman.jpg" alt="VS Code">
+            <p>Postman</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-mb-16">
+        <h3 class="tw-text-2xl tw-font-bold tw-text-secondary tw-border-l-4 tw-border-primary tw-pl-4 tw-mb-8">Databases
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-box"><img src="assets/sql.jpeg" alt="SQL">
+            <p>SQL</p>
+          </div>
+          <div class="skill-box"><img src="assets/mysql.png" alt="MySQL">
+            <p>MySQL</p>
+          </div>
+          <div class="skill-box"><img src="assets/mongodb.jpeg" alt="MongoDB">
+            <p>MongoDB</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-mb-16">
+        <h3 class="tw-text-2xl tw-font-bold tw-text-secondary tw-border-l-4 tw-border-primary tw-pl-4 tw-mb-8">Domain
+          Knowledge</h3>
+        <div class="skills-grid">
+          <div class="skill-box"><img src="assets/ai.png" alt="AI">
+            <p>AI</p>
+          </div>
+          <div class="skill-box"><img src="assets/ml.png" alt="ML">
+            <p>ML</p>
+          </div>
+          <div class="skill-box"><img src="assets/dl.png" alt="DL">
+            <p>DL</p>
+          </div>
+          <div class="skill-box"><img src="assets/fs.png" alt="Full Stack">
+            <p>Full Stack</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-mb-16">
+        <h3 class="tw-text-2xl tw-font-bold tw-text-secondary tw-border-l-4 tw-border-primary tw-pl-4 tw-mb-8">
+          Deployment & Hosting</h3>
+        <div class="skills-grid">
+          <div class="skill-box"><img src="assets/hostinger.png" alt="AI">
+            <p>Hostinger</p>
+          </div>
+          <div class="skill-box"><img src="assets/gitpages.png" alt="ML">
+            <p>Gitpages</p>
+          </div>
+          <div class="skill-box"><img src="assets/streamlit.png" alt="DL">
+            <p>Streamlit</p>
+          </div>
+          <div class="skill-box"><img src="assets/render.jpg" alt="Full Stack">
+            <p>Render</p>
+          </div>
+          <div class="skill-box"><img src="assets/netlify.png" alt="Full Stack">
+            <p>Netlify</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="Blog" class="tw-py-32 reveal-on-scroll">
+    <div class="container">
+      <div class="heading-container text-center tw-mb-20">
+        <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">Blogs & Articles</h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-md-6">
+          <div
+            class="tw-bg-cardbg tw-p-10 tw-rounded-2xl tw-border-t-4 tw-border-primary hover:tw-translate-y-[-5px] tw-transition-all tw-shadow-2xl tw-h-full tilt-hover">
+            <h3 class="tw-text-2xl tw-font-bold tw-mb-4 text-gradient">🧠 The Role of Chunking</h3>
+            <p class="tw-text-gray-400 tw-text-lg tw-mb-6 tw-leading-relaxed">Discover how chunking transforms complex
+              tasks into manageable parts and enhances problem-solving efficiency.</p>
+            <a href="https://chunkinganditsimporatnce.blogspot.com/2025/02/the-role-of-chunking-in-problem-solving.html"
+              target="_blank" class="tw-text-primary tw-font-bold tw-text-lg hover:tw-underline">Read Full Blog →</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="tw-bg-cardbg tw-p-10 tw-rounded-2xl tw-border-t-4 tw-border-secondary hover:tw-translate-y-[-5px] tw-transition-all tw-shadow-2xl tw-h-full tilt-hover">
+            <h3 class="tw-text-2xl tw-font-bold tw-mb-4 text-gradient">💸 Paid For It, Didn't Use It</h3>
+            <p class="tw-text-gray-400 tw-text-lg tw-mb-6 tw-leading-relaxed">A practical dive into how wasted data
+              plans and unused subscriptions cost us daily.</p>
+            <a href="https://unuseddata.blogspot.com/2025/07/paid-for-it-didnt-use-it-lost-it-daily.html"
+              target="_blank" class="tw-text-secondary tw-font-bold tw-text-lg hover:tw-underline">Read Full Blog →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="Connect" class="tw-bg-black tw-py-16 tw-border-t tw-border-gray-800 reveal-on-scroll">
+    <div class="container text-center">
+      <h2 class="tw-text-4xl tw-font-bold tw-mb-6 text-gradient">Social Media Connect</h2>
+      <p class="tw-text-gray-400 tw-text-lg tw-mb-10">Now that you know me 😄, let's make it official — 🤝 connect,
+        share ideas, and grow together 🚀✨</p>
+      <div class="tw-flex tw-justify-center tw-gap-6 tw-mb-10 tw-flex-wrap">
+        <a href="https://www.linkedin.com/in/ch-venkata-shiva-sri-976245296/" target="_blank" class="social-box"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Mrinnovater" target="_blank" class="social-box"><i class="bi bi-github"></i></a>
+        <a href="https://leetcode.com/u/Shiva33_19/" target="_blank" class="social-box"><i
+            class="bi bi-code-square"></i></a>
+        <a href="https://wa.me/+919381677518" target="_blank" class="social-box"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:shivamchodisetty333@gmail.com" target="_blank" class="social-box"><i
+            class="bi bi-envelope-at-fill"></i></a>
+      </div>
+      <p class="tw-text-gray-600 tw-text-md">© 2026 <a href="#" class="tw-text-primary">Ch Venkata Shiva Sri</a>. All
+        rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
