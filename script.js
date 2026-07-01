@@ -76,4 +76,44 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImage');
+    const closeBtn = document.getElementById('closeLightbox');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    if (lightbox && triggers.length > 0) {
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                lightboxImg.src = trigger.src;
+                lightbox.classList.remove('tw-hidden');
+                lightbox.classList.add('tw-flex');
+
+                setTimeout(() => {
+                    lightbox.classList.remove('tw-opacity-0');
+                    lightboxImg.classList.remove('tw-scale-95');
+                    lightboxImg.classList.add('tw-scale-100');
+                }, 10);
+            });
+        });
+
+        const closeLightbox = () => {
+            lightbox.classList.add('tw-opacity-0');
+            lightboxImg.classList.remove('tw-scale-100');
+            lightboxImg.classList.add('tw-scale-95');
+
+            setTimeout(() => {
+                lightbox.classList.remove('tw-flex');
+                lightbox.classList.add('tw-hidden');
+            }, 300);
+        };
+
+        closeBtn.addEventListener('click', closeLightbox);
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
 });
