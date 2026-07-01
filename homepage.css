@@ -336,3 +336,43 @@ html {
         font-size: 2.5rem;
     }
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.project-grid-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100% !important; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-grid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-img-wrapper img {
+  height: 240px; 
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.project-content-wrapper p {
+  flex-grow: 1; 
+}
+
+.project-content-wrapper .mt-auto {
+  margin-top: auto; 
+}
