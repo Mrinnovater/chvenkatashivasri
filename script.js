@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.target.classList.add('reveal', 'active');
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0, rootMargin: "0px 0px -50px 0px" });
 
     revealElements.forEach(el => {
         el.classList.add('reveal');
